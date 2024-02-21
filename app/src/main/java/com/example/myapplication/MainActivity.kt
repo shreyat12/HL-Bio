@@ -46,6 +46,7 @@ import com.google.ai.client.generativeai.type.SafetySetting
 import com.google.ai.client.generativeai.type.generationConfig
 
 class MainActivity : ComponentActivity() {
+    private val apiKey = "AIzaSyBBa1ROAQxjkYXlqaX5n0GubY4K72GfAZo"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -77,7 +78,7 @@ class MainActivity : ComponentActivity() {
         )
         return GenerativeModel(
             "gemini-1.0-pro",
-            BuildConfig.apiKey,
+            apiKey,
             config,
             safetySettings
         )
