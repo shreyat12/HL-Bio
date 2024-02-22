@@ -50,6 +50,8 @@ import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     private val apiKey = "AIzaSyBBa1ROAQxjkYXlqaX5n0GubY4K72GfAZo"
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
